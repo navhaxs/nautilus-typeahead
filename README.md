@@ -8,6 +8,7 @@ nautilus 3.18.5 with typeahead patch applied for Fedora 23.
 
 # Building steps
 
+```shell
 dnf download --source nautilus
 # Unpack the rpm:
 # nautilus-3.18.5.tar.xz file to ~/rpmbuild/SOURCES
@@ -26,3 +27,4 @@ sudo dnf reinstall nautilus-3.18.5-1.fc23.x86_64.rpm
 gsettings set org.gnome.nautilus.preferences enable-interactive-search true
 # rinse and repeat above for gtk3 package to also get the patched file chooser dialog
 # gsettings set org.gtk.Settings.FileChooser use-type-ahead true
+```
